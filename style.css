@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+
+.love-light-regular {
+    font-family: "Love Light", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для всех полос прокрутки */
+::-webkit-scrollbar {
+    width: 5px; /* Ширина полосы прокрутки */
+  }
+  
+  /* Стили для ручки полосы прокрутки (thumb) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #555; /* Цвет фона ручки */
+    border-radius: 5px; /* Радиус скругления углов ручки */
+  }
+
+body {
+    /* font-size: 4rem; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #0F141E;
+    background: pink;
+}
+
+h1 {
+    font-size: 2vh;
+    text-align: center;
+}
+
+.top {
+    width: 100%;
+    height: 12%;
+    position: fixed;
+    top: 0;
+    background: pink;
+    z-index: 0;
+}
+
+.container {
+    position: absolute;
+    left: 15%;
+    top: 12%;
+    bottom: 12%;
+    border-radius: 20px;
+    margin: auto;
+    width: 100%;
+    height: 76%;
+    z-index: 2;
+}
+
+/* .bar {
+    height: auto;
+} */
+
+.bot {
+    width: 100%;
+    height: 12%;
+    position: fixed;
+    top: 88%;
+    background: pink;
+    z-index: 0;
+}
+
+/* .menu_bar {
+    border-radius: 20px;
+    margin: auto;
+} */
+
+/* .text_bar {
+    position: absolute;
+    border-radius: 20px;
+    margin: auto;
+    top: 42.3%;
+    height: 400px;
+    width: 100%;
+} */
+
+.img {
+    position: relative;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.img p {
+    font-size: 9vh;
+    font-family: 'love-light-regular';
+}
+
+.img_top {
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: auto;
+    width: 100%;
+    min-height: 200px;
+}
+
+.angle {
+    max-width: 500px;
+    max-height: 500px;
+    position: fixed;
+    z-index: 2;
+}
+
+.img1 {
+    left: 0;
+    top: 0;
+}
+
+.img2 {
+    right: 0;
+    top: 0;
+}
+
+.img3 {
+    right: 0;
+    bottom: 0;
+}
+
+.img4 {
+    left: 0;
+    bottom: 0;
+}
+
+.box1 {
+    border-radius: 20px;
+    background: rgb(252, 146, 163);
+}
+
+.main_box {
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+    height: 7%;
+    background: lightblue;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    border-radius: 20px;
+}
+
+.headText { 
+    display: flex;
+    justify-content: center;  
+    align-items: center;   
+    position: relative;
+    width: 100%;
+    height: 5%
+}
+
+.text {    
+    position: sticky;
+    overflow: auto;
+    width: 100%;
+    height: 65%;
+}
+
+.text p {
+    margin: 10px 30px 10px 10px;
+}
+
+span {
+    text-align: center;
+    height: 50px;
+    width: 20%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 20%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.menu:hover {
+    background: rgb(255, 212, 133);
+}
+/* 
+.body_box {
+    width: 100%;
+    height: 70%;
+} */
+
+h1:hover {
+    cursor: default;
+}
+
+a {
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+    color: #0F141E;
+}
+
+a:hover {
+    color: rgb(243, 92, 33);
+}
+
+ @media screen and (orientation: portrait) {
+    .angle {
+        width: 30%;
+        height: auto;
+    } 
+
+    .container {
+        max-width: 70%;
+        /* margin-top: 10%;
+        margin-bottom: 10%; */
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .angle {
+        height: 30%;
+        width: auto;
+    } 
+    
+    .container {
+        max-width: 70%;
+        /* margin-top: 10%;
+        margin-bottom: 10%; */
+    }
+}
+
+    /* .img3 {
+        width: 0;
+    }
+    
+    .img4 {
+        width: 0;
+    } 
+}
+/*
+@media (max-width:1400px) {
+    .angle {
+        width: 300px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:1200px) {
+    .angle {
+        width: 150px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width:1000px) {
+    .angle {
+        width: 0;
+    }
+
+    .container {
+        max-width: 700px;
+        margin-top: 50px;
+    }
+} */
